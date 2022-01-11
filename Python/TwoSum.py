@@ -16,7 +16,7 @@ class TwoSum(object):
                 print("The pair is {} {}".format(num, target - num))
                 return [num, target - num]
 
-        return none
+        return None
 
 
 nums = [2,7,11,15]
