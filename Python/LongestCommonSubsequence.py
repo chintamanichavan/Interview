@@ -1,7 +1,9 @@
-def lcs_algo(S1, S2, m, n):
+def lcs_algo(S1, S2):
+    m = len(S1)
+    n = len(S2)
     L = [[0 for x in range(n + 1)] for x in range(m + 1)]
 
-    # Building the mtrix in bottom-up way
+    # Building the matrix in bottom-up way
     for i in range(m + 1):
         for j in range(n + 1):
             if i == 0 or j == 0:
@@ -35,9 +37,10 @@ def lcs_algo(S1, S2, m, n):
     print("S1 : " + S1 + "\nS2 : " + S2)
     print("LCS: " + "".join(lcs_algo))
 
+def main():
+    S1 = "ACADB"
+    S2 = "CBDA"
+    lcs_algo(S1, S2)
 
-S1 = "ACADB"
-S2 = "CBDA"
-m = len(S1)
-n = len(S2)
-lcs_algo(S1, S2, m, n)
+if __name__ == "__main__":
+    main()

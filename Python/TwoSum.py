@@ -1,25 +1,27 @@
 from typing import List
-class TwoSum(object):
+class Solution:
+    class TwoSum(object):
 
-    def __init__(self, nums: List[int], target: int):
-        self.nums= nums
-        self.target = target
+        def __init__(self, nums: List[int], target: int):
+            self.nums = nums
+            self.target = target
 
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        numsDict = dict()
-        for num in nums:
-            numsDict[num] = num
-        
-        for num in nums:
+        def twoSum(self, nums: List[int], target: int) -> List[int]:
+            numsDict = dict()
+            for num in nums:
+                numsDict[num] = num
 
-            if ((target - num) in numsDict):
-                print("The pair is {} {}".format(num, target - num))
-                return [num, target - num]
+            for num in nums:
 
-        return None
+                if ((target - num) in numsDict):
+                    print("The pair is {} {}".format(num, target - num))
+                    return [num, target - num]
+
+            return None
 
 
-nums = [2,7,11,15]
-target = 9
-object = TwoSum(nums, target)
-object.twoSum(nums,target)
+if __name__ == "__main__":
+    nums = [2, 7, 11, 15]
+    target = 9
+    solution = Solution.TwoSum(nums, target)
+    print(solution.twoSum(nums, target))
