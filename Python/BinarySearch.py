@@ -1,4 +1,5 @@
-class BinarySearch(object):
+from typing import List
+class Solution(object):
 
     def __init__(self, nums: List[int], target: int):
         self.nums = nums
@@ -22,9 +23,11 @@ class BinarySearch(object):
         return -1
 
 
-nums = [-2, 3, 4, 7, 8, 9, 11, 13]
-target = 11
+def main():
+    s = Solution()
+    nums = [-2, 3, 4, 7, 8, 9, 11, 13]
+    target = 11
+    s.binary_search(nums, target)
 
-b = BinarySearch()
-
-b.binary_search(nums, target)
+if __name__ == '__main__':
+    main()
