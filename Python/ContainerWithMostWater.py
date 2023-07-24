@@ -1,25 +1,22 @@
-from typing import List
-
 class Solution:
-    def maxArea(self, height: List[int]) -> int:
-        res = 0
-        l,r = 0,len(height) - 1
-        while l < r:
-            area = (r - 1) * min(height[l], height[r])
-            res = max(res, area)
+    def maxArea(self, height):
+        maxArea = 0
 
-            if height[l] < height[r]:
-                l += 1
-            else:
-                r -= 1
+        for i in range(len(height)):
+            for j in range(i + 1, len(height)):
+                width = j - i
+                area = min(height[i], height[j]) * width
+                maxArea = max(maxArea, area)
 
-        print(res)
-        return res
+        return maxArea
+
 
 def main():
     s = Solution()
     height = [1,8,6,2,5,4,8,3,7]
     s.maxArea(height)
+    result = s.maxArea(height)
+    print(result)
 
 if __name__ == '__main__':
     main()
