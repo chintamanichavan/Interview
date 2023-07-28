@@ -1,18 +1,19 @@
 class Solution:
     def maxProfit(self, prices):
-        max_profit, min_price = 0, float('inf')
-        for price in prices:
-            min_price = min(min_price, price)
-            profit = price - min_price
-            max_profit = max(profit, max_profit)
-        print(max_profit)
-        return max_profit
+        maxProfit = 0
+
+        for i in range(1, len(prices)):
+            if prices[i] > prices[i - 1]:
+                maxProfit = max(maxProfit, prices[i] - prices[i - 1])
+
+        return maxProfit
 
 
 def main():
     s = Solution()
     prices = [7,1,5,3,6,4]
-    s.maxProfit(prices)
+    res = s.maxProfit(prices)
+    print(res)
 
 
 if __name__ == "__main__":
