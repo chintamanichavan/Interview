@@ -23,7 +23,7 @@ class Solution:
 
 
 def main():
-    n = 4
+    n = 1
     s = Solution()
     res = s.totalNQueens(n)
     print(res)
