@@ -1,11 +1,16 @@
-def using_bit_manipulation(n):
+class Solution:
+    def countBits(self, n):
         count = 0
         while n:
-            if n & 1: count += 1
+            if n & 1:
+                count += 1
             n = n >> 1
-        print(count)
         return count
 
+def main():
+    n = 11111111111111111111111111111101
+    s = Solution()
+    print(s.countBits(n))
 
-n = 11111111111111111111111111111101
-using_bit_manipulation(n)
+if __name__ == "__main__":
+    main()
