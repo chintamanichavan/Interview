@@ -13,6 +13,7 @@ Here is a list of solutions available in this repository:
 
 - [1. Two Sum](./1_Two_Sum)
 - [2. Add Two Numbers](./2_Add_Two_Numbers)
+- [3. #Sum](./3Sum)
 - ... and more
 
 You can navigate to each solution's directory to see the problem statement and the Python solution.
