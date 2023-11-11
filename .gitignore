@@ -1,0 +1,28 @@
+.DS_Store
+.Rproj.user
+
+# Don't track Rivian-related work going forward (already-tracked files use skip-worktree below)
+*rivian*
+*Rivian*
+*RIVN*
+
+# Notebook artifacts
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+Untitled*.ipynb
+
+# Python envs
+.venv/
+venv/
+**/quant_dev_env/
+**/venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Build / cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.benchmarks/
