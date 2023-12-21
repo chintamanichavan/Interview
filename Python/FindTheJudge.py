@@ -9,3 +9,5 @@ class Solution:
             if Trusted[i] == N-1:
                 return i
         return -1
+
+# review 2023-12-20
