@@ -6,3 +6,5 @@ class Solution:
         for i in range(1, len(row)-1):
             row[i] = prev_row[i-1] + prev_row[i]
         return row
+
+# review 2024-01-14
