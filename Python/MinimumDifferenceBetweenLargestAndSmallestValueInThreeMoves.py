@@ -25,3 +25,5 @@ solution = Solution()
 print(solution.minDifference([5, 3, 2, 4]))         # Output: 0
 print(solution.minDifference([1, 5, 0, 10, 14]))    # Output: 1
 print(solution.minDifference([3, 100, 20]))         # Output: 0
+
+# review 2024-01-27
