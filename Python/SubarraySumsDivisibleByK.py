@@ -27,3 +27,5 @@ class Solution:
 sol = Solution()
 print(sol.subarraysDivByK([4,5,0,-2,-3,1], 5))  # Output: 7
 print(sol.subarraysDivByK([5], 9))  # Output: 0
+
+# review 2024-02-05
