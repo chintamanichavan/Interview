@@ -1,21 +1,23 @@
 class Solution:
     def findLeastNumOfUniqueInts(self, arr: List[int], k: int) -> int:
 
-        # Count the frequencies
-        freq = {}
-        for num in arr:
-            freq[num] = freq.get(num, 0) + 1
+        """
+        Finds the least number of unique integers after removing exactly k elements from the array.
 
-        # Sort by frequency
-        sorted_freq = sorted(freq.items(), key=lambda x: x[1])
+        Args:
+            arr: A list of integers.
+            k: The number of elements to remove.
 
-        # Remove k elements
-        for num, count in sorted_freq:
-            if k >= count:
-                k -= count
-                del freq[num]
+        Returns:
+            The least number of unique integers after removing k elements.
+        """
+
+        c = Counter(arr)
+        cnt, remaining = Counter(c.values()), len(c)
+        for key in range(1, len(arr) + 1): 
+            if k >= key * cnt[key]:
+                k -= key * cnt[key]
+                remaining -= cnt[key]
             else:
-                break
-
-        # Return the number of remaining unique elements
-        return len(freq)
+                return remaining - k // key
+        return remaining
