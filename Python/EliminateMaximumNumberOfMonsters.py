@@ -17,3 +17,5 @@ class Solution:
                 break
         
         return monsters_eliminated
+
+# review 2024-03-15
