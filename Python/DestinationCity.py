@@ -11,3 +11,5 @@ class Solution:
         for path in paths:
             if path[1] not in departure_cities:
                 return path[1]
+
+# review 2024-03-31
