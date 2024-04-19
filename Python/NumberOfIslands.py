@@ -1,3 +1,12 @@
+"0", "0"],
+        ["0", "0", "0", "0", "0"]
+    ]
+    s = Solution()
+    res = s.numIslands(grid)
+    print(res)
+
+if __name__ == '__main__':
+    main()
 class Solution():
     def numIslands(self, grid):
         if not grid:
@@ -31,12 +40,4 @@ def main():
     grid = [
         ["1", "1", "1", "1", "0"],
         ["1", "1", "0", "1", "0"],
-        ["1", "1", "0", "0", "0"],
-        ["0", "0", "0", "0", "0"]
-    ]
-    s = Solution()
-    res = s.numIslands(grid)
-    print(res)
-
-if __name__ == '__main__':
-    main()
+        ["1", "1", "0",
