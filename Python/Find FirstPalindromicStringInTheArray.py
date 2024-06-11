@@ -15,3 +15,5 @@ class Solution:
             if word == word[::-1]:  # Check if the word is a palindrome
                 return word
         return ""  # No palindrome found
+
+# review 2024-06-11
