@@ -11,3 +11,5 @@ class Solution:
             d[num] = j
             res += j - i + 1
         return res
+
+# review 2024-06-15
