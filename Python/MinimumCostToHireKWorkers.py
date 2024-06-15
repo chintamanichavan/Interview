@@ -23,3 +23,5 @@ class Solution:
             min_cost = min(min_cost, total_quality * ratio)
 
         return min_cost
+
+# review 2024-06-15
