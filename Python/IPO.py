@@ -1,5 +1,4 @@
 import heapq
-
 class Solution():
     def findMaximizedCapital(self, k, w, profits, capital):
         projects = list(zip(profits, capital))
