@@ -6,3 +6,5 @@ class Solution:
 
         # The maximum product is obtained by the first two elements after subtracting 1 from each
         return (nums[0] - 1) * (nums[1] - 1)
+
+# review 2024-06-20
