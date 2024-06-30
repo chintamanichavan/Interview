@@ -11,3 +11,5 @@ class Solution:
             subarray = nums[start:end + 1]
             answer.append(self.canMakeArithmeticProgression(subarray))
         return answer
+
+# review 2024-06-29
