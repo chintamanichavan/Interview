@@ -1,13 +1,20 @@
-class Solution:
-    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        d = {}
-        res = []
-        for n in nums1:
-          d[n] = 1
 
-        for n in nums2:
-		  # Check if n is in dictionary and not in the result
-          if n in d and d[n]:
-            res.append(n)
-            d[n] -= 1 # It will set the value of d[n] = 0 which will indicate we already added n in result
-        return res
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        counts = Counter(nums1)
+        result = []
+
+        # Assuming we have a function that reads chunks of nums2 from disk
+        for chunk in read_chunks_from_disk(nums2):
+            for num in chunk:
+                if counts[num] > 0:
+                    result.append(num)
+                    counts[num] -= 1
+
+        return result
+
+# Function to simulate reading chunks from disk (not actual implementation)
+def read_chunks_from_disk(nums2):
+    chunk_size = 100  # Example chunk size
+    for i in range(0, len(nums2), chunk_size):
+        yield nums2[i:i + chunk_size]
