@@ -15,3 +15,5 @@ def maxDotProduct(nums1, nums2):
 print(maxDotProduct([2,1,-2,5], [3,0,-6]))  # Expected output: 18
 print(maxDotProduct([3,-2], [2,-6,7]))      # Expected output: 21
 print(maxDotProduct([-1,-1], [1,1]))        # Expected output: -1
+
+# review 2024-07-02
