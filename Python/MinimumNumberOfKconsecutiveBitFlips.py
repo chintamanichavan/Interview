@@ -12,3 +12,5 @@ class Solution:
                 flipped ^= 1
                 res += 1
         return res
+
+# review 2024-07-11
