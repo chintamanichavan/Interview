@@ -10,3 +10,5 @@ class Solution:
                     return n-i if nums == sorted(nums) else -1
 
         return 0
+
+# review 2024-07-20
