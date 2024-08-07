@@ -15,3 +15,5 @@ class Solution:
                 maxTimeInGroup = neededTime[i]
 
         return totalTime
+
+# review 2024-08-07
