@@ -14,3 +14,5 @@ class Solution:
             fast = fast.next.next
         return slow
 
+
+# review 2024-08-30
