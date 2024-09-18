@@ -6,3 +6,5 @@ class Solution:
             if nums[i-1] < nums[i]: val += 1
             ans += val
         return ans 
+
+# review 2024-09-18
