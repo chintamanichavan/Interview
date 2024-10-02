@@ -17,3 +17,5 @@ class FoodRatings:
 
     def highestRated(self, cuisine: str) -> str:
         return self.data[cuisine][0][1]
+
+# review 2024-10-01
