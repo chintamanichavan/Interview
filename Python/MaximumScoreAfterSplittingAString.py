@@ -21,3 +21,5 @@ class Solution:
             max_score = max(max_score, score)
 
         return max_score
+
+# review 2024-10-11
