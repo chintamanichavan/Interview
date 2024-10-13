@@ -17,3 +17,5 @@ class Solution:
         
         # The length of 'dp' is the length of the longest increasing subsequence
         return len(dp)
+
+# review 2024-10-12
