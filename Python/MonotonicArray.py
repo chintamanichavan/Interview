@@ -13,3 +13,5 @@ def isMonotonic(nums):
 print(isMonotonic([1,2,2,3]))  # Expected output: true
 print(isMonotonic([6,5,4,4]))  # Expected output: true
 print(isMonotonic([1,3,2]))    # Expected output: false
+
+# review 2024-10-30
