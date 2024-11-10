@@ -29,3 +29,5 @@ class Solution:
         list2.next = b_next
 
         return list1
+
+# review 2024-11-10
