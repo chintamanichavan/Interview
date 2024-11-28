@@ -21,3 +21,5 @@ class Solution:
             result.append(max_val)
         
         return result
+
+# review 2024-11-28
