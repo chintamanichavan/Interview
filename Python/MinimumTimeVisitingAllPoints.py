@@ -10,3 +10,5 @@ class Solution:
             total_time += distance(points[i], points[i + 1])
 
         return total_time
+
+# review 2024-12-30
