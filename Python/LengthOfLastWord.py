@@ -4,3 +4,5 @@ class Solution:
         r = s.strip().split()
         # Return the length of the last word
         return len(r[-1])
+
+# review 2025-03-14
