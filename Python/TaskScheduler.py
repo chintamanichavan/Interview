@@ -8,3 +8,5 @@ class Solution:
         max_frequency_count = list(task_counts.values()).count(max_frequency)
 
         return max((max_frequency - 1) * (n + 1) + max_frequency_count, len(tasks))
+
+# review 2025-04-10
