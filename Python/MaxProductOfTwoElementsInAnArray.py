@@ -8,3 +8,5 @@ class Solution:
         return (nums[0] - 1) * (nums[1] - 1)
 
 # review 2024-06-20
+
+# review 2025-05-03
