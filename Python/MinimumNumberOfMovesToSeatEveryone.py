@@ -15,3 +15,5 @@ class Solution:
 # print(sol.minMovesToSeat([3,1,5], [2,7,4]))  # Output: 4
 # print(sol.minMovesToSeat([4,1,5,9], [1,3,2,6]))  # Output: 7
 # print(sol.minMovesToSeat([2,2,6,6], [1,3,2,6]))  # Output: 4
+
+# review 2025-05-17
