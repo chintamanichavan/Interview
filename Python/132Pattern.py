@@ -18,3 +18,5 @@ def find132pattern(nums):
 print(find132pattern([1,2,3,4]))       # Expected output: false
 print(find132pattern([3,1,4,2]))       # Expected output: true
 print(find132pattern([-1,3,2,0]))      # Expected output: true
+
+# review 2025-05-27
