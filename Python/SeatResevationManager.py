@@ -18,3 +18,5 @@ class SeatManager:
 # obj = SeatManager(n)
 # param_1 = obj.reserve()
 # obj.unreserve(seatNumber)
+
+# review 2025-06-07
