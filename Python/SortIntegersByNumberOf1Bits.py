@@ -4,3 +4,5 @@ def sortByBits(arr):
         return (bin(x).count('1'), x)
     
     return sorted(arr, key=sort_key)
+
+# review 2025-06-17
