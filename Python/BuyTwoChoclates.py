@@ -10,3 +10,5 @@ class Solution:
 
         min_price = first_min + second_min
         return money - min_price if min_price <= money else money
+
+# review 2025-06-21
