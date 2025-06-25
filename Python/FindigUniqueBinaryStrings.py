@@ -9,3 +9,5 @@ class Solution:
             if i not in seen:
                 # Format the number back into a binary string of length n
                 return format(i, '0' + str(n) + 'b')
+
+# review 2025-06-24
