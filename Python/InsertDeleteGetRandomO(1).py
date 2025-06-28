@@ -27,3 +27,5 @@ class RandomizedSet:
 
     def getRandom(self) -> int:
         return random.choice(self.list)
+
+# review 2025-06-28
