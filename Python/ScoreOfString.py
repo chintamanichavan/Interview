@@ -9,3 +9,5 @@ class Solution:
 sol = Solution()
 print(sol.scoreOfString("hello"))  # Output: 13
 print(sol.scoreOfString("zaz"))    # Output: 50
+
+# review 2025-06-28
