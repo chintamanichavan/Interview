@@ -21,3 +21,5 @@ class Solution:
             k %= factorials[n - i - 1]
 
         return kth_permutation
+
+# review 2025-06-29
