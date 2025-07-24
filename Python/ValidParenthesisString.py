@@ -17,3 +17,5 @@ class Solution:
                 return False
 
         return min_open == 0
+
+# review 2025-07-23
