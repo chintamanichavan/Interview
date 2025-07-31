@@ -30,3 +30,5 @@ class Solution:
 
         explore(0, lettersCounter, 0)
         return totalScore
+
+# review 2025-07-31
