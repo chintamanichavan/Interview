@@ -17,3 +17,5 @@ class Solution:
                     dp[i][j] = min(dp[i][j], dp[k - 1][j - 1] + max_difficulty)
 
         return dp[n][d] if dp[n][d] < float('inf') else -1
+
+# review 2025-08-03
