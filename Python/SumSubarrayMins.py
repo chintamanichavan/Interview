@@ -28,3 +28,5 @@ class Solution:
         return sum(a * l * r for a, l, r in zip(arr, left, right)) % MOD
 
 # review 2025-06-05
+
+# review 2025-08-08
