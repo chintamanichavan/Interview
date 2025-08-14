@@ -36,3 +36,5 @@ def findRotateSteps(ring: str, key: str) -> int:
 ring = "godding"
 key = "gd"
 print(findRotateSteps(ring, key))  # Output: 4
+
+# review 2025-08-13
