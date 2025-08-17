@@ -19,3 +19,5 @@ class Solution:
             if sum(grid[r][col] for r in range(nRows)) * 2 < nRows:
                 flipCol(col)
         return sum(checkRow(row) for row in grid)
+
+# review 2025-08-16
