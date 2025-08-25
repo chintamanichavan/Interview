@@ -16,3 +16,5 @@ class Solution:
 
         # The minimum sum is the minimum value in the top row
         return min(matrix[0])
+
+# review 2025-08-25
