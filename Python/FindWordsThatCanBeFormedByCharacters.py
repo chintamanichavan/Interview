@@ -18,3 +18,5 @@ class Solution:
 
         # Sum the lengths of all good strings
         return sum(len(word) for word in words if is_good(word))
+
+# review 2025-08-25
