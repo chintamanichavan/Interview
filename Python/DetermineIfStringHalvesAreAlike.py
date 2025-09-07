@@ -6,3 +6,5 @@ class Solution:
         first_half_vowels = sum(1 for char in s[:mid] if char in vowels)
         second_half_vowels = sum(1 for char in s[mid:] if char in vowels)
         return first_half_vowels == second_half_vowels
+
+# review 2025-09-06
