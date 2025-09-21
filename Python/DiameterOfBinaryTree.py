@@ -19,3 +19,5 @@ class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
         self.depth(root)
         return self.diameter
+
+# review 2025-09-20
