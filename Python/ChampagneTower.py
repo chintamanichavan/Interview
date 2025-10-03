@@ -14,3 +14,5 @@ def champagneTower(poured, query_row, query_glass):
                 glasses[i][j] = 1
 
     return glasses[query_row][query_glass]
+
+# review 2025-10-03
