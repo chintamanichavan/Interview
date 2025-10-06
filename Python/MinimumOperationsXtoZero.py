@@ -36,3 +36,5 @@ def minOperations(nums, x):
 print(minOperations([1,1,4,2,3], 5))  # Expected output: 2
 print(minOperations([5,6,7,8,9], 4))  # Expected output: -1
 print(minOperations([3,2,20,1,1,3], 10))  # Expected output: 5
+
+# review 2025-10-05
