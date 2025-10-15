@@ -23,3 +23,5 @@ class Solution:
 # print(sol.singleNumber([1, 2, 1, 3, 2, 5]))  # Output: [3, 5] or [5, 3]
 # print(sol.singleNumber([-1, 0]))  # Output: [-1, 0] or [0, -1]
 # print(sol.singleNumber([0, 1]))  # Output: [1, 0] or [0, 1]
+
+# review 2025-10-14
