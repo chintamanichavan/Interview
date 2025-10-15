@@ -35,3 +35,5 @@ class Solution:
             elif t == 2: ans += not ufb.union(u, v)                     # Bob only
             else: ans += not ufa.union(u, v)                            # Alice only
         return ans if ufa.count == 1 and ufb.count == 1 else -1 # check if uf is connected
+
+# review 2025-10-14
