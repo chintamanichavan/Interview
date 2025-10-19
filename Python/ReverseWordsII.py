@@ -8,3 +8,5 @@ def reverseWords(s):
 # Test the function with the given examples
 print(reverseWords("Let's take LeetCode contest"))  # Expected output: "s'teL ekat edoCteeL tsetnoc"
 print(reverseWords("God Ding"))                    # Expected output: "doG gniD"
+
+# review 2025-10-19
