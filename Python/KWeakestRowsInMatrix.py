@@ -33,3 +33,5 @@ k2 = 2
 print(kWeakestRows(mat2, k2))  # Output: [0, 2]
 
 # review 2025-10-04
+
+# review 2025-10-22
