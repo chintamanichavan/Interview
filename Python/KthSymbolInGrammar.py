@@ -11,3 +11,5 @@ def kthGrammar(self, N: int, K: int) -> int:
             return 1-solver(N-1,K-mid)
     
     return solver(N,K)
+
+# review 2025-10-24
