@@ -28,3 +28,5 @@ class Solution:
                 right = mid - 1
 
         return right
+
+# review 2025-10-27
