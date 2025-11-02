@@ -12,3 +12,5 @@ class Solution:
                         special_count += 1
 
         return special_count
+
+# review 2025-11-02
