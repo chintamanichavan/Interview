@@ -9,3 +9,5 @@ class Solution:
 
         # Compare the sorted frequency counts of characters in both words
         return sorted(Counter(word1).values()) == sorted(Counter(word2).values())
+
+# review 2025-11-22
