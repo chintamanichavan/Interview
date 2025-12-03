@@ -26,3 +26,5 @@ class Solution:
             return max(left_diff, right_diff)
 
         return dfs(root, root.val, root.val)
+
+# review 2025-12-02
