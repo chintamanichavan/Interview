@@ -9,3 +9,5 @@ class Solution:
             cnt+= (len(s) == 0)
 
         return pow(2, cnt - 1, 1_000_000_007)
+
+# review 2025-12-05
