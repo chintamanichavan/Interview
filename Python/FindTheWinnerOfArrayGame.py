@@ -21,3 +21,5 @@ class Solution:
         
         # If no element has won k consecutive rounds, return max_element
         return max_element
+
+# review 2025-12-11
