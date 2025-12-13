@@ -22,3 +22,5 @@ class Solution:
                 ways += pas[n][r]
 
         return ways
+
+# review 2025-12-13
