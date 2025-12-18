@@ -41,3 +41,5 @@ class Solution:
 
         # Previous becomes the new head of the reversed list
         return previous
+
+# review 2025-12-17
