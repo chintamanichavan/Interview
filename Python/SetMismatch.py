@@ -15,3 +15,5 @@ class Solution:
                 missing = i
 
         return [duplicate, missing]
+
+# review 2025-12-20
