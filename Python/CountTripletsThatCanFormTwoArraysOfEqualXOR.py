@@ -13,3 +13,5 @@ class Solution:
                     count += (k - i)
 
         return count
+
+# review 2026-01-05
