@@ -10,3 +10,5 @@ class Solution:
                 dp[i] = max(dp[i], dp[i - j] + max_val * j)
 
         return dp[n]
+
+# review 2026-01-06
