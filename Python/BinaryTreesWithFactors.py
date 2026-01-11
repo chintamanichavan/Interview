@@ -25,3 +25,5 @@ class Solution:
         
         # Return the result as an integer after applying the modulo operation
         return int(result % (10**9 + 7))
+
+# review 2026-01-10
