@@ -35,3 +35,5 @@ class Solution:
         if root.right:
             s += '({})'.format(self.tree2str(root.right))
         return s        
+
+# review 2026-01-12
