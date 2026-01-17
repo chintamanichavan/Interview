@@ -16,3 +16,5 @@ class Solution:
         one_loss = sorted([player for player, count in loss_count.items() if count == 1])
 
         return [zero_losses, one_loss]
+
+# review 2026-01-17
