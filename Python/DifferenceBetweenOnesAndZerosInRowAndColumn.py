@@ -12,3 +12,5 @@ class Solution:
                 diff[i][j] = 2 * (ones_row[i] + ones_col[j]) - m - n
 
         return diff
+
+# review 2026-01-27
