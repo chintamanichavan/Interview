@@ -18,3 +18,5 @@ class Solution:
 			head = head.next
 
 		return dummy.next
+
+# review 2026-01-29
