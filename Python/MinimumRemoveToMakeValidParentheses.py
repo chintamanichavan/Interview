@@ -17,3 +17,5 @@ class Solution:
             s[stack.pop()] = ''
 
         return ''.join(s)
+
+# review 2026-02-07
