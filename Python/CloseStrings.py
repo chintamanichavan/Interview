@@ -11,3 +11,5 @@ class Solution:
         return sorted(Counter(word1).values()) == sorted(Counter(word2).values())
 
 # review 2025-11-22
+
+# review 2026-03-18
