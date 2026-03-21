@@ -7,3 +7,5 @@ class Solution:
                 ans += prev * c
                 prev = c
         return ans
+
+# review 2026-03-21
