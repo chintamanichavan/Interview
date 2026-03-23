@@ -22,3 +22,5 @@ def backspaceCompare(s: str, t: str) -> bool:
         ptr_t -= 1
 
     return True
+
+# review 2026-03-22
