@@ -19,3 +19,4 @@ class Solution:
         
         # return head->next..=> new head
         return head.next
+# review 2026-03-25
