@@ -26,3 +26,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .benchmarks/
+
+# Rust
+Rust/target/
+Rust/Cargo.lock
