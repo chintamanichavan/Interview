@@ -30,3 +30,8 @@ __pycache__/
 # Rust
 Rust/target/
 Rust/Cargo.lock
+
+# Java / C++
+*.class
+CPP/build/
+*.o
