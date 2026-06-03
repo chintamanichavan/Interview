@@ -1,7 +1,7 @@
 class Solution():
 
     # Optimal DP solution
-    def climbStairs(n):
+    def climbStairs(self, n):
         if n == 1:
             return 1
         dp = [0 for i in range(n + 1)]

@@ -1,51 +1,53 @@
-class UnionFind:
-    def __init__(self):
-        self.parent = {}
-        self.rank = {}
-        self.weight = {}
+from typing import List
 
-    def find(self, x):
-        if x != self.parent.get(x, x):
-            self.parent[x] = self.find(self.parent[x])
-            self.weight[x] *= self.weight[self.parent[x]]
-        return self.parent.get(x, x)
 
-    def union(self, x, y, value):
-        xr, yr = self.find(x), self.find(y)
-        if xr != yr:
-            self.parent[xr] = yr
-            self.weight[xr] = self.weight[y] * 1 / (self.weight[x] / value)
+class Solution:
+    def calcEquation(self, equations: List[List[str]], values: List[float],
+                     queries: List[List[str]]) -> List[float]:
+        # Weighted union-find. weight[x] holds x / parent[x]; after find with path
+        # compression it holds x / root. Nodes are lazily initialized on first find.
+        parent: dict[str, str] = {}
+        weight: dict[str, float] = {}
 
-    def calcEquation(self, equations, values, queries):
-        uf = UnionFind()
+        def find(x: str) -> str:
+            if x not in parent:
+                parent[x] = x
+                weight[x] = 1.0
+                return x
+            if parent[x] != x:
+                orig = parent[x]
+                parent[x] = find(orig)
+                weight[x] *= weight[orig]
+            return parent[x]
+
+        def union(x: str, y: str, value: float) -> None:
+            rx, ry = find(x), find(y)
+            if rx == ry:
+                return
+            # x / y = value, with x = weight[x]*rx and y = weight[y]*ry, so
+            # rx / ry = value * weight[y] / weight[x]. Attach rx under ry.
+            parent[rx] = ry
+            weight[rx] = value * weight[y] / weight[x]
+
         for (x, y), v in zip(equations, values):
-            uf.union(x, y, v)
+            union(x, y, v)
 
         res = []
-        for q in queries:
-            if q[0] not in uf.parent or q[1] not in uf.parent:
-                res.append(-1.0)
-            elif uf.find(q[0]) != uf.find(q[1]):
+        for a, b in queries:
+            if a not in parent or b not in parent or find(a) != find(b):
                 res.append(-1.0)
             else:
-                res.append(uf.weight[q[0]] / uf.weight[q[1]])
-
+                res.append(weight[a] / weight[b])
         return res
 
+
 def main():
+    s = Solution()
     equations = [["a", "b"], ["b", "c"]]
     values = [2.0, 3.0]
     queries = [["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"]]
+    print(s.calcEquation(equations, values, queries))  # [6.0, 0.5, -1.0, 1.0, -1.0]
 
-    s = UnionFind()
-    res = s.calcEquation(equations, values, queries)
-    print(res)
 
 if __name__ == '__main__':
     main()
-
-# review 2023-12-06
-
-# review 2025-07-02
-
-# review 2026-01-20
