@@ -1,32 +1,40 @@
-```markdown
 # LeetCode Solutions
 
-This repository contains my solutions to problems from the [LeetCode](https://leetcode.com/) platform.
+My solutions to problems from [LeetCode](https://leetcode.com/). The older corpus is
+Python-only; recent problems are solved in five languages.
 
 ## Structure
 
-Each solution is placed within its own directory, named by the LeetCode problem number and title. The directories contain the problem statement in a `README.md` file and the Python solution file.
+Solutions are organized flat, by language. Each file is named by the problem title
+(e.g. `JumpGameIII`) and is self-contained.
 
-## Solutions
+| Directory | Language | Layout |
+|-----------|----------|--------|
+| `Python/` | Python   | One `.py` per problem; `class Solution` + an `if __name__` demo block |
+| `Go/`     | Go       | One `.go` per problem, each `//go:build ignore` so they don't collide on `main` |
+| `Rust/`   | Rust     | Cargo project; solutions in `src/bin/<snake_case>.rs` with `#[cfg(test)]` tests |
+| `CPP/`    | C++      | One `.cpp` per problem; `class Solution` + a `main()` demo |
+| `Java/`   | Java     | One `.java` per problem; `public class <Name>` + a `main()` demo |
 
-Here is a list of solutions available in this repository:
-
-- [1. Two Sum](./1_Two_Sum)
-- [2. Add Two Numbers](./2_Add_Two_Numbers)
-- [3. #Sum](./3Sum)
-- ... and more
-
-You can navigate to each solution's directory to see the problem statement and the Python solution.
-
-## Usage
-
-To run any solution, navigate to the solution's directory and run the Python file with a Python interpreter:
+## Running a solution
 
 ```bash
-cd 1_Two_Sum
-python solution.py
+python3 Python/JumpGameIII.py
+go run Go/JumpGameIII.go
+cargo run --bin jump_game_iii        # from Rust/
+g++ -std=c++17 -O2 CPP/JumpGameIII.cpp -o /tmp/sol && /tmp/sol
+javac -d /tmp Java/JumpGameIII.java && java -cp /tmp JumpGameIII
 ```
 
-## Contributing
+## Tests
 
-Contributions are always welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
+A local, stdlib-only regression pipeline lives under `tests/` (untracked — kept local).
+It golden-diffs the stdout of every printing solution, runs `cargo test` for Rust, and
+syntax-smokes the rest:
+
+```bash
+python3 tests/run_tests.py          # check everything
+python3 tests/run_tests.py --bless  # regenerate goldens after intentional changes
+```
+
+See `tests/README.md` for details.

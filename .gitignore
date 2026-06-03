@@ -35,3 +35,6 @@ Rust/Cargo.lock
 *.class
 CPP/build/
 *.o
+
+# Local test pipeline (goldens + orchestrator are kept local, not tracked)
+tests/
