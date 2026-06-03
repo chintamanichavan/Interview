@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
         word_set = set(wordDict)
@@ -27,11 +28,15 @@ class Solution:
 
         return backtrack(0)
 
-# Example usage:
+
 if __name__ == "__main__":
     sol = Solution()
-    s1 = "catsanddog"
-    wordDict1 = ["cat", "cats", "and​⬤
+    print(sorted(sol.wordBreak("catsanddog", ["cat", "cats", "and", "sand", "dog"])))
+    # ['cat sand dog', 'cats and dog']
+    print(sorted(sol.wordBreak("pineapplepenapple",
+                               ["apple", "pen", "applepen", "pine", "pineapple"])))
+    print(sol.wordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"]))  # []
+
 
 # review 2024-10-24
 

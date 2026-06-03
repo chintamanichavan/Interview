@@ -51,16 +51,17 @@ def convertToLists(heads):
         result.append(part)
     return result
 
-# Example usage:
-head1 = ListNode(1, ListNode(2, ListNode(3)))
-k1 = 5
-result1 = splitLinkedList(head1, k1)
-print(convertToLists(result1))  # Output: [[1], [2], [3], [], []]
+def main():
+    head1 = ListNode(1, ListNode(2, ListNode(3)))
+    print(convertToLists(splitLinkedList(head1, 5)))  # [[1], [2], [3], [], []]
 
-head2 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6, ListNode(7, ListNode(8, ListNode(9, ListNode(10)))))))))))
-k2 = 3
-result2 = splitLinkedList(head2, k2)
-print(convertToLists(result2))  # Output: [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]
+    head2 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6,
+                ListNode(7, ListNode(8, ListNode(9, ListNode(10))))))))))
+    print(convertToLists(splitLinkedList(head2, 3)))  # [[1, 2, 3, 4], [5, 6, 7], [8, 9, 10]]
+
+
+if __name__ == '__main__':
+    main()
 
 # review 2024-07-27
 

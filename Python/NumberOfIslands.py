@@ -1,14 +1,8 @@
-"0", "0"],
-        ["0", "0", "0", "0", "0"]
-    ]
-    s = Solution()
-    res = s.numIslands(grid)
-    print(res)
+from typing import List
 
-if __name__ == '__main__':
-    main()
-class Solution():
-    def numIslands(self, grid):
+
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
         if not grid:
             return 0
 
@@ -17,11 +11,10 @@ class Solution():
 
         def dfs(r, c):
             if (r < 0 or r >= rows or
-                c < 0 or c >= cols or
-                grid[r][c] == '0'):
+                    c < 0 or c >= cols or
+                    grid[r][c] == '0'):
                 return
-
-            grid[r][c] = '0'
+            grid[r][c] = '0'  # sink the cell so it isn't recounted
             dfs(r + 1, c)
             dfs(r - 1, c)
             dfs(r, c + 1)
@@ -37,7 +30,22 @@ class Solution():
 
 
 def main():
-    grid = [
+    s = Solution()
+    grid1 = [
         ["1", "1", "1", "1", "0"],
         ["1", "1", "0", "1", "0"],
-        ["1", "1", "0",
+        ["1", "1", "0", "0", "0"],
+        ["0", "0", "0", "0", "0"],
+    ]
+    print(s.numIslands(grid1))  # 1
+    grid2 = [
+        ["1", "1", "0", "0", "0"],
+        ["1", "1", "0", "0", "0"],
+        ["0", "0", "1", "0", "0"],
+        ["0", "0", "0", "1", "1"],
+    ]
+    print(s.numIslands(grid2))  # 3
+
+
+if __name__ == '__main__':
+    main()
